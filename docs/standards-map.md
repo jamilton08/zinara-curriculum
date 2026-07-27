@@ -99,3 +99,16 @@
 - **HS-DAT-IM-28 / HS-SYS-IM-36 / HS-SOC-HI-39** (policy & regulation debates): out of core scope; strong candidates for a misc.9 "Who governs computing?" discussion lesson.
 - **HS-SOC-ET-41/42** (emerging tech impacts/design): ○ via 5.6/5.7; could be made explicit in capstone design docs.
 - **NYSED pin-pass**: CT/NSD/CY/DL/IC strand mapping needs exact 9–12 numbers from the NYSED band document — the one remaining manual pass.
+
+## Sources & attribution
+
+Standard identifiers and text are quoted from the *2026 CSTA PK–12 Computer
+Science Standards* — © 2026 Computer Science Teachers Association, licensed
+CC BY-NC-SA 4.0. https://csteachers.org/pk12standards/
+Full standards PDF and interactive display available at that address.
+
+NYSED K–12 Computer Science & Digital Fluency Learning Standards:
+https://www.nysed.gov/curriculum-instruction/computer-science-and-digital-fluency-learning-standards
+
+This map is a self-declared alignment and does not imply endorsement by
+CSTA or NYSED.
