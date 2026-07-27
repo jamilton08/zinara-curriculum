@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "m1.l6",
+  "content_version": 1,
+  "module": "basics",
+  "title": "The Screen Is a Grid",
+  "thesis": "Who defines (0,0)?",
+  "prerequisites": ["m1.l5"],
+  "content": [
+    { "type": "video", "id": "v1", "title": "TODO: coordinates video", "src": "https://www.youtube.com/watch?v=TODO", "minutes": 6 },
+    { "type": "text", "id": "t1", "text": "[b]Your task:[/b] TODO — place sprites at exact coordinates, then move one with code. First taste of vectors." }
+  ],
+  "assessments": [
+    { "id": "a1", "type": "in_editor", "title": "Place the markers", "required": true,
+      "checks": [
+        { "assert": "node_exists", "path": "Main/Marker" },
+        { "assert": "property_equals", "path": "Main/Marker", "property": "position", "value": "(200, 100)" }
+      ] },
+    { "id": "a2", "type": "code", "title": "move_to() lands exactly", "required": true,
+      "entry": "res://tests/test_movement.tscn", "timeout_sec": 20 }
+  ],
+  "completion": { "required": ["v1", "a1", "a2"], "rule": "all_required" },
+  "reset": { "restores": ["mover.gd"] }
+}

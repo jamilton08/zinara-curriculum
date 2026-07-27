@@ -1,0 +1,11 @@
+; Zinara Curriculum — Zinara 1.8 - Interactive Scene
+config_version=5
+
+[application]
+
+config/name="Zinara 1.8 - Interactive Scene"
+config/features=PackedStringArray("4.2")
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/zinara_classroom/plugin.cfg")

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "id": "m1.l1",
+  "content_version": 1,
+  "module": "basics",
+  "title": "You Already Think in Algorithms",
+  "thesis": "How precise is precise enough?",
+  "prerequisites": [],
+  "content": [
+    { "type": "video", "id": "v1", "title": "TODO: intro video", "src": "https://www.youtube.com/watch?v=TODO", "minutes": 6 },
+    { "type": "text", "id": "t1", "text": "[b]Your task:[/b] TODO — write a daily routine as numbered steps, then break it by following it literally." }
+  ],
+  "assessments": [
+    { "id": "a1", "type": "mc", "title": "Check: what breaks an algorithm", "required": true,
+      "question": "TODO", "choices": ["TODO", "TODO", "TODO", "TODO"], "answer": 0, "shuffle": true },
+    { "id": "a2", "type": "written", "title": "Your morning as an algorithm", "required": true,
+      "prompt": "TODO: Write your morning routine as exact steps a robot could follow. Where would a literal-minded robot go wrong?", "min_words": 60, "review": "teacher" }
+  ],
+  "completion": { "required": ["v1", "a1", "a2"], "rule": "all_required" },
+  "reset": { "restores": [] }
+}

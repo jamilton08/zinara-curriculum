@@ -1,0 +1,9 @@
+# Godot caches
+**/.godot/
+*.import
+
+# Addon is copied into lesson folders only for local dev — the repo copy in /addon is canonical
+modules/**/addons/
+
+# OS noise
+.DS_Store

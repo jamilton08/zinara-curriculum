@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "m1.l2",
+  "content_version": 1,
+  "module": "basics",
+  "title": "If/Else — Formalizing Decisions",
+  "thesis": "What conditions matter?",
+  "prerequisites": ["m1.l1"],
+
+  "content": [
+    {
+      "type": "video",
+      "id": "v1",
+      "title": "How computers make decisions",
+      "src": "https://www.youtube.com/watch?v=REPLACE_ME",
+      "minutes": 6
+    },
+    {
+      "type": "text",
+      "id": "t1",
+      "text": "[b]Your task:[/b]\n1. Open [code]main.tscn[/code] (the 2D scene).\n2. Add a [code]Label[/code] node named [code]StatusLabel[/code] as a child of Main.\n3. Attach the script [code]player.gd[/code] to the Main node.\n4. Complete [code]check_number()[/code] in player.gd so it returns \"positive\", \"negative\", or \"zero\".\n5. Watch the live checks below turn green, then press [b]Run test cases[/b]."
+    }
+  ],
+
+  "assessments": [
+    {
+      "id": "a1",
+      "type": "mc",
+      "title": "Check: conditions",
+      "required": true,
+      "question": "A game gives the player a shield ONLY when health is below 20 AND the shield hasn't been used. How many conditions is the computer checking?",
+      "choices": ["One", "Two", "Three", "None — computers don't check conditions"],
+      "answer": 1,
+      "shuffle": true
+    },
+    {
+      "id": "a2",
+      "type": "in_editor",
+      "title": "Build the scene",
+      "required": true,
+      "checks": [
+        { "assert": "node_exists", "path": "Main/StatusLabel" },
+        { "assert": "node_class", "path": "Main/StatusLabel", "class": "Label" },
+        { "assert": "script_attached", "path": "Main", "script": "player.gd" }
+      ]
+    },
+    {
+      "id": "a3",
+      "type": "code",
+      "title": "check_number() works",
+      "required": true,
+      "entry": "res://tests/test_player.tscn",
+      "timeout_sec": 20
+    },
+    {
+      "id": "a4",
+      "type": "written",
+      "title": "Decisions in real life",
+      "required": true,
+      "prompt": "Describe one decision YOU made today as an if/else statement. What was the condition? What happened in each branch? Why did the condition have to be precise?",
+      "min_words": 40,
+      "review": "teacher"
+    }
+  ],
+
+  "completion": {
+    "required": ["v1", "a1", "a2", "a3", "a4"],
+    "rule": "all_required"
+  },
+
+  "reset": { "restores": ["main.tscn", "player.gd"] }
+}

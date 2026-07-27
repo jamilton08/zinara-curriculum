@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "id": "m1.l8",
+  "content_version": 1,
+  "module": "basics",
+  "title": "Mini-Project: Interactive Scene",
+  "thesis": "All the pieces, one build.",
+  "prerequisites": ["m1.l7"],
+  "content": [
+    { "type": "video", "id": "v1", "title": "TODO: project brief video", "src": "https://www.youtube.com/watch?v=TODO", "minutes": 5 },
+    { "type": "text", "id": "t1", "text": "[b]Project brief:[/b] TODO — a scene with a button, a character, and a reaction: conditions, a loop, state, a function, and a signal all in one build. Rubric in media/rubric.md." }
+  ],
+  "assessments": [
+    { "id": "a1", "type": "in_editor", "title": "Scene structure", "required": true,
+      "checks": [
+        { "assert": "node_exists", "path": "Main/ActionButton" },
+        { "assert": "node_exists", "path": "Main/Character" },
+        { "assert": "script_attached", "path": "Main", "script": "game.gd" }
+      ] },
+    { "id": "a2", "type": "code", "title": "Project test suite", "required": true,
+      "entry": "res://tests/test_project.tscn", "timeout_sec": 30 },
+    { "id": "a3", "type": "written", "title": "Decisions you made", "required": true,
+      "prompt": "TODO: Describe two engineering decisions in your project — what you chose, what you gave up.", "min_words": 80, "review": "teacher" }
+  ],
+  "completion": { "required": ["v1", "a1", "a2", "a3"], "rule": "all_required" },
+  "reset": { "restores": ["game.gd", "main.tscn"] }
+}
