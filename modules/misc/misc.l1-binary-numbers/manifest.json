@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "id": "misc.l1",
+  "content_version": 1,
+  "module": "misc",
+  "title": "Binary — How Computers Count",
+  "thesis": "Why do computers only get two fingers?",
+  "optional": true,
+  "prerequisites": [],
+  "content": [
+    { "type": "video", "id": "v1", "title": "TODO", "src": "https://www.youtube.com/watch?v=TODO", "minutes": 5 },
+    { "type": "text", "id": "t1", "text": "TODO" }
+  ],
+  "assessments": [
+    { "id": "a1", "type": "mc", "title": "TODO", "required": true,
+      "question": "TODO", "choices": ["TODO", "TODO", "TODO", "TODO"], "answer": 0, "shuffle": true }
+  ],
+  "completion": { "required": ["v1", "a1"], "rule": "all_required" },
+  "reset": { "restores": [] }
+}

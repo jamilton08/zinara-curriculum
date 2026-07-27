@@ -1,0 +1,8 @@
+{
+  "id": "misc",
+  "title": "Miscellaneous — Small Lessons, Big Ideas",
+  "marking_period": null,
+  "optional": true,
+  "description": "Optional-but-important CS lessons that don't belong to one module: how computers count, how the internet works, version control, privacy and security, debugging, hardware, history, careers. Assignable any time of year; also where the curriculum's Systems & Security and Computing & Society standards coverage lives.",
+  "lessons": ["misc.l1", "misc.l2", "misc.l3", "misc.l4", "misc.l5", "misc.l6", "misc.l7", "misc.l8"]
+}
