@@ -1,106 +1,101 @@
 # Standards Alignment Map
 
 **Frameworks targeted:**
-- **2026 CSTA PK–12 Computer Science Standards** (published July 2026) — high school foundational band (`HS-*`), plus on-ramp to the **Game Development (GMD)** and **Artificial Intelligence (AIN)** high-school specialty areas
-- **NYSED K–12 Computer Science & Digital Fluency Learning Standards** — 9–12 band
+- **2026 CSTA PK–12 Computer Science Standards** (published July 2026) — High School Foundational band (all 46 standards reviewed), plus on-ramps to the **Game Development (GMD)** and **Artificial Intelligence (AIN)** high-school specialty areas
+- **NYSED K–12 Computer Science & Digital Fluency Learning Standards** — 9–12 band (strand-level; pin exact numbers before public lesson-level claims)
 
-> **Alignment status & honesty note.** This map is a self-declared alignment ("designed to address"), not a CSTA-validated crosswalk or endorsement. CSTA 2026 identifiers follow `HS-<CONCEPT>-<SUBCONCEPT>-<##>`. Where an exact standard number has been verified against the published PDF it is listed in full; where the row is mapped at the **subconcept** level (e.g., `HS-PRO-TR`), pin the exact number using CSTA's interactive display (csteachers.org/pk12standards/view) — marked **[pin #]**. NYSED rows are mapped at strand level (CT, NSD, CY, DL, IC) — **[pin #]** likewise.
+> **Alignment status.** Self-declared alignment ("designed to address"), not a CSTA-validated crosswalk or endorsement. Every CSTA identifier below is quoted from the published 2026 standards. Markers: **✓** = lesson squarely addresses the standard · **○** = partial/supporting. Standards not claimed are listed in **Gaps** — an honest map beats an inflated one.
 
-## CSTA 2026 concept coverage at a glance
+## Coverage at a glance (HS Foundational, 46 standards)
 
-| CSTA Concept | Where this curriculum hits it |
-|---|---|
-| **Algorithms & Design (ALG)** | Everywhere — the "Decision of the Day" device *is* this concept. M1 (algorithmic problem solving), M2 (data-structure selection), M4 (rule-based approaches), M5 (data-driven approaches, ML) |
-| **Programming (PRO)** | M1–M4 coding lessons: program development, variables & data storage, reading/modifying starter code, testing & refining via the autograder loop |
-| **Data & Analysis (DAT)** | M5: collection, labeling, cleaning, investigation, impacts — using students' own motion data |
-| **Systems & Security (SYS)** | **Primary home: Miscellaneous module** (hardware/software, networks, security & privacy-by-design) |
-| **Computing & Society (SOC)** | Mission framing throughout; Misc lessons on history of computing/games and careers; M4.1 & M5.6 (humans & computing, AI relationship) |
-
-## Verified CSTA 2026 anchors (exact IDs from the published standards)
-
-These high-school Algorithms & Design standards are quoted-by-ID from the 2026 publication and anchor the modules shown:
-
-| CSTA ID | Standard (gist) | Lessons |
-|---|---|---|
-| HS-ALG-PS-01 | Design an algorithm using appropriate data structures | M2 throughout; 2.8 capstone |
-| HS-ALG-PS-02 | Optimize algorithm design w/ procedural abstraction & control structures | 1.5, 2.7, 4.4–4.5 |
-| HS-ALG-PS-03 | Evaluate algorithms for efficiency, correctness, clarity via metrics/test cases | 2.7, 4.5; the autograder habit itself |
-| HS-ALG-PS-04 | Deterministic vs. probabilistic algorithms | 4.7 (personality via parameters), 5.4 |
-| HS-ALG-PS-05 | Evaluate AI-generated output for bias, accuracy, harms | 5.6 |
-| HS-ALG-ML-06 | Justify selection of an AI algorithm type for a task | 5.1, 5.4 |
-| HS-ALG-ML-07 | Evaluate training data: source, quality, representativeness, bias, privacy | 5.5 |
-| HS-ALG-ML-08 | Develop a machine learning model for a chosen task w/ appropriate data & tools | 5.4–5.7 |
+| Concept | Standards | Addressed (✓ or ○) | Primary home |
+|---|---|---|---|
+| Algorithms & Design (11) | HS-ALG-PS-01…IM-11 | 11 | Everywhere; the "Decision of the Day" device |
+| Programming (9) | HS-PRO-PD-12…TR-20 | 8 | M1–M4 + capstone (gap: RD-18, see Gaps) |
+| Data & Analysis (8) | HS-DAT-DC-21…IM-28 | 6 | M5, on students' own motion data |
+| Systems & Security (9) | HS-SYS-HW-29…IM-37 | 7 | Miscellaneous module |
+| Computing & Society (9) | HS-SOC-HI-38…CE-46 | 8 | Mission framing, M4/M5, misc |
 
 ## Lesson-by-lesson map
 
-Legend: CSTA subconcepts — ALG-PS (Algorithmic Problem Solving), ALG-ML (Machine Learning), ALG-IM (Impacts), PRO-PD (Program Development), PRO-VD (Variables & Data Storage), PRO-RD (Reading & Documenting), PRO-TR (Testing & Refining), DAT-DC (Collection & Prep), DAT-DI (Investigation), DAT-IM (Impacts), SYS-HW/SE/NT/IM, SOC-HI/ET/HU/CE.
-
 ### Module 1 — Basics
-| Lesson | CSTA 2026 | NYSED 9–12 |
+| Lesson | CSTA 2026 | Notes |
 |---|---|---|
-| 1.1 Algorithms | HS-ALG-PS [pin #] | CT [pin #] |
-| 1.2 If/Else | HS-PRO-PD, HS-ALG-PS [pin #] | CT [pin #] |
-| 1.3 Loops | HS-PRO-PD [pin #] | CT [pin #] |
-| 1.4 Variables & State | HS-PRO-VD [pin #] | CT [pin #] |
-| 1.5 Functions | HS-ALG-PS-02; HS-PRO-PD [pin #] | CT [pin #] |
-| 1.6 Screen Grid | HS-PRO-PD [pin #] | CT [pin #] |
-| 1.7 Events & Signals | HS-PRO-PD, HS-PRO-RD [pin #] | CT [pin #] |
-| 1.8 Mini-project | HS-PRO-PD, HS-PRO-TR [pin #] | CT, DL [pin #] |
+| 1.1 Algorithms | ○ HS-ALG-PS-03 | Precision/correctness at intro level; MS-band review by design, builds toward PS-01 |
+| 1.2 If/Else | ✓ HS-PRO-RD-17 | check_number(): parameters, return values, tracing |
+| 1.3 Loops | ○ HS-ALG-PS-02, ○ HS-PRO-RD-17 | Control structures |
+| 1.4 Variables & State | ○ HS-PRO-VD-16 | Builds toward data structures |
+| 1.5 Functions | ✓ HS-ALG-PS-02, ✓ HS-PRO-PD-12 | Procedural abstraction; modularity |
+| 1.6 Screen Grid | ○ HS-PRO-RD-17 | |
+| 1.7 Events & Signals | ✓ HS-PRO-RD-17 | Event-driven flow analysis |
+| 1.8 Mini-project | ✓ HS-PRO-TR-19, ✓ HS-PRO-TR-20 | The autograder loop = testing/refining, practiced all year |
 
 ### Module 2 — Data Structures
-| Lesson | CSTA 2026 | NYSED 9–12 |
+| Lesson | CSTA 2026 | Notes |
 |---|---|---|
-| 2.1–2.4 Lists/Stacks/Queues/Dicts | HS-ALG-PS-01; HS-PRO-VD [pin #] | CT [pin #] |
-| 2.5 Trees (scene tree) | HS-ALG-PS-01; HS-PRO-RD [pin #] | CT [pin #] |
-| 2.6 Graphs | HS-ALG-PS-01 | CT [pin #] |
-| 2.7 Searching & Traversal | HS-ALG-PS-02, HS-ALG-PS-03 | CT [pin #] |
-| 2.8 Mini-project | HS-ALG-PS-01; HS-PRO-PD, HS-PRO-TR [pin #] | CT [pin #] |
+| 2.1–2.4 Lists/Stacks/Queues/Dicts | ✓ HS-ALG-PS-01, ✓ HS-PRO-VD-16 | Selecting + using appropriate structures |
+| 2.5 Trees (scene tree) | ✓ HS-ALG-PS-01, ✓ HS-PRO-RD-17 | Reading a structure they've been using |
+| 2.6 Graphs | ✓ HS-ALG-PS-01 | |
+| 2.7 Searching & Traversal | ✓ HS-ALG-PS-02, ✓ HS-ALG-PS-03 | Efficiency via test cases |
+| 2.8 Mini-project | ✓ HS-ALG-PS-01, ✓ HS-PRO-TR-20 | Written justification of structure choices |
 
 ### Module 3 — 2D & 3D Space
-| Lesson | CSTA 2026 | NYSED 9–12 |
+| Lesson | CSTA 2026 | Notes |
 |---|---|---|
-| 3.1–3.6 Vectors → transforms | HS-PRO-PD, HS-PRO-VD [pin #] (math interdisciplinary connections are a CSTA design feature — cite CCSS-M vectors where your school requires) | CT [pin #] |
-| 3.7 Skeletons = trees of transforms | HS-ALG-PS-01 applied; GMD specialty on-ramp | CT [pin #] |
-| 3.8 Mini-project | HS-PRO-PD, HS-PRO-TR [pin #] | CT [pin #] |
+| 3.1–3.6 Vectors → transforms | ○ HS-PRO-VD-16, ○ HS-PRO-RD-17 | Deep CCSS-Math interdisciplinary connections (a CSTA 2026 design feature) |
+| 3.7 Skeletons = trees of transforms | ✓ HS-ALG-PS-01 (applied) | GMD specialty on-ramp |
+| 3.8 Mini-project | ✓ HS-PRO-TR-19, ✓ HS-PRO-TR-20 | |
 
 ### Module 4 — Character Intelligence
-| Lesson | CSTA 2026 | NYSED 9–12 |
+| Lesson | CSTA 2026 | Notes |
 |---|---|---|
-| 4.1 Pac-Man ghosts (1980) | HS-ALG-PS-04; SOC-HI [pin #] | CT, IC [pin #] |
-| 4.2 State machines | HS-ALG-PS [pin #] | CT [pin #] |
-| 4.3 Decision trees | HS-ALG-PS [pin #] | CT [pin #] |
-| 4.4–4.5 Pathfinding I–II | HS-ALG-PS-02, HS-ALG-PS-03 | CT [pin #] |
-| 4.6 Sensing | HS-PRO-PD [pin #] | CT [pin #] |
-| 4.7 Personality via parameters | HS-ALG-PS-04 | CT [pin #] |
-| 4.8 Mini-project | HS-PRO-PD, HS-PRO-TR; HS-ALG-PS-03 | CT [pin #] |
+| 4.1 Pac-Man ghosts (1980) | ✓ HS-SOC-HI-38, ○ HS-ALG-PS-04 | Historical trajectory of a computing technology |
+| 4.2 State machines | ✓ HS-ALG-PS-01, ○ HS-ALG-PS-02 | |
+| 4.3 Decision trees | ✓ HS-ALG-PS-01, ○ HS-ALG-ML-06 | Decision tree as transparent AI algorithm type |
+| 4.4 Pathfinding I (BFS) | ✓ HS-ALG-PS-01, ✓ HS-ALG-PS-03 | |
+| 4.5 Pathfinding II (A*) | ✓ HS-ALG-PS-02, ✓ HS-ALG-PS-03 | |
+| 4.6 Sensing | ○ HS-PRO-PD-12 | |
+| 4.7 Personality via parameters | ✓ HS-ALG-PS-04, ✓ HS-ALG-IM-11 | Values embedded in an algorithmic system — tuning IS design |
+| 4.8 Mini-project | ✓ HS-PRO-TR-19/20, ○ HS-SOC-HU-44 | "Does it *think*?" debate: human vs. artificial intelligence |
 
 ### Module 5 — Motion Intelligence
-| Lesson | CSTA 2026 | NYSED 9–12 |
+| Lesson | CSTA 2026 | Notes |
 |---|---|---|
-| 5.1 From rules to data | HS-ALG-ML-06 | CT [pin #] |
-| 5.2 Your body as vectors | HS-ALG-ML [pin #]; DAT-DC [pin #] | CT [pin #] |
-| 5.3 Features | DAT-DC, DAT-DI [pin #] | CT [pin #] |
-| 5.4 Classification | HS-ALG-ML-06, HS-ALG-ML-08; HS-ALG-PS-04 | CT [pin #] |
-| 5.5 Data Science I (collect/label/clean) | HS-ALG-ML-07; DAT-DC [pin #] | CT [pin #] |
-| 5.6 Data Science II (accuracy/overfit/LLM bridge) | HS-ALG-PS-05; DAT-IM [pin #] | CT, DL [pin #] |
-| 5.7 Motion mini-game | HS-ALG-ML-08; GMD + AIN specialty on-ramp | CT [pin #] |
+| 5.1 From rules to data | ✓ HS-ALG-ML-06, ○ HS-SOC-HU-44 | |
+| 5.2 Your body as vectors | ○ HS-DAT-DC-22 | Landmark schema = a data dictionary |
+| 5.3 Features | ✓ HS-DAT-DC-23, ○ HS-DAT-DI-25 | |
+| 5.4 Classification | ✓ HS-ALG-ML-06, ✓ HS-ALG-ML-08, ○ HS-ALG-PS-04 | |
+| 5.5 Data Science I | ✓ HS-ALG-ML-07, ✓ HS-DAT-DC-23, ✓ HS-DAT-DC-24 | Source, quality, representativeness, privacy — on their own data |
+| 5.6 Data Science II | ✓ HS-ALG-PS-05, ✓ HS-DAT-IM-27, ✓ HS-ALG-IM-10 | AI outputs, bias, large-scale data collection, LLM bridge |
+| 5.7 Motion mini-game | ✓ HS-ALG-ML-08, ✓ S1-AIN-DD-03 | Literally "create an application using a prebuilt supervised learning model" — AIN Specialty I on-ramp |
 
 ### Capstone — Ship a Game
-Practices-heavy by design (CSTA 2026 practice categories): Computational Thinking 6–9 (define, abstract, create, test/refine), Inclusive Collaboration 3–5 (communicate, manage projects, act responsibly), Human-Centered Design 10–12 (involve users — the playtest lesson), Ethics & Social Responsibility 1–2 (opt-in publishing, attribution, respecting players' data). Concept anchors: HS-PRO-PD/TR [pin #]; SOC [pin #]. GMD Specialty I on-ramp.
-
-### Miscellaneous module (optional lessons — also the Systems & Security + Computing & Society patch)
-| Lesson | CSTA 2026 | NYSED 9–12 |
+| Element | CSTA 2026 | Notes |
 |---|---|---|
-| misc.1 Binary & how computers count | SYS-HW [pin #] | NSD [pin #] |
-| misc.2 How the internet works | SYS-NT [pin #] | NSD [pin #] |
-| misc.3 Version control (git) | PRO-PD (collaboration workflows) [pin #] | CT, DL [pin #] |
-| misc.4 Your data, your machine (privacy by design — why pose data never leaves the device; CIA triad) | SYS-SE [pin #]; ESR2 practice | CY [pin #] |
-| misc.5 The debugging mindset | PRO-TR [pin #] | CT [pin #] |
-| misc.6 Hardware: what runs your game | SYS-HW, SYS-IM [pin #] | NSD [pin #] |
-| misc.7 History of computing & games | SOC-HI [pin #] | IC [pin #] |
-| misc.8 Careers in computing | SOC-CE [pin #] | IC [pin #] |
+| Design doc + human-centered design | ✓ HS-ALG-IM-09 | Design a computing technology using HCD principles |
+| Build sprints | ✓ HS-PRO-PD-12, ✓ HS-PRO-PD-13 | Libraries/APIs = Zinara primitives + docs |
+| Attribution & opt-in publish | ✓ HS-PRO-PD-14 | IP attribution; students keep their IP |
+| Playtest & iterate | ✓ HS-PRO-TR-19, ✓ HS-PRO-TR-20, ✓ HS-ALG-PS-03 | Real user feedback loop |
+| Team workflow (if teamed) | ✓ HS-PRO-PD-15 | Defined workflow, roles, docs |
+| Demo day | ✓ HS-SOC-CE-46, ○ HS-SOC-CE-45 | Connect computing to personal goals |
+| Practices | CT6–9, IC3–5, HCD10–12, ESR1–2 | The capstone is where all four practice categories converge |
 
-## Known gaps (tracked deliberately)
-- **SYS-NT/SE depth**: misc.2 + misc.4 cover fundamentals; a full networking/cybersecurity treatment is out of scope for this course — noted so nobody claims otherwise.
-- **DAT-DI breadth**: data investigations are motion-centric; a general-datasets investigation could strengthen 5.3 or live in misc.
-- **Pin-# pass**: replace every [pin #] from the CSTA interactive display and the NYSED 9–12 band document before claiming lesson-level alignment publicly.
+### Miscellaneous module
+| Lesson | CSTA 2026 | Notes |
+|---|---|---|
+| misc.1 Binary | ○ HS-SYS-HW-30 | MS review; supports HW understanding |
+| misc.2 How the internet works | ✓ HS-SYS-NT-34, ✓ HS-SYS-NT-35 | Network of networks |
+| misc.3 Version control | ✓ HS-PRO-PD-15, ✓ HS-PRO-PD-13 | Defined workflow + tooling |
+| misc.4 Your data, your machine | ✓ HS-SYS-SE-31, ✓ HS-SYS-SE-33, ○ HS-DAT-IM-27 | Security trade-offs + formulate a fix, taught through the platform's own privacy-by-design |
+| misc.5 Debugging mindset | ✓ HS-PRO-TR-19/20 | |
+| misc.6 Hardware | ✓ HS-SYS-HW-29, ✓ HS-SYS-HW-30, ○ HS-SYS-IM-37 | |
+| misc.7 History of computing & games | ✓ HS-SOC-HI-38, ○ HS-SOC-ET-40 | |
+| misc.8 Careers | ✓ HS-SOC-CE-45, ✓ HS-SOC-CE-46 | |
+
+## Gaps (deliberate, tracked)
+- **HS-PRO-RD-18** (evaluate AI-generated code): not yet in the spine — *recommended addition*: a short activity where students critique Claude/ChatGPT-generated GDScript against requirements. Perfectly on-mission ("understand what's underneath"); candidate for M1.8 or misc.
+- **HS-DAT-DC-21** (generate simulated data): not covered; possible M5 extension (simulate motion data, compare with real).
+- **HS-DAT-DI-26** (evaluate a visualization/simulation): partial at best in 5.6; strengthen with an explicit visualization-critique step.
+- **HS-DAT-IM-28 / HS-SYS-IM-36 / HS-SOC-HI-39** (policy & regulation debates): out of core scope; strong candidates for a misc.9 "Who governs computing?" discussion lesson.
+- **HS-SOC-ET-41/42** (emerging tech impacts/design): ○ via 5.6/5.7; could be made explicit in capstone design docs.
+- **NYSED pin-pass**: CT/NSD/CY/DL/IC strand mapping needs exact 9–12 numbers from the NYSED band document — the one remaining manual pass.
