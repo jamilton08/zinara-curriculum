@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "m1.l0",
+  "content_version": 1,
+  "module": "basics",
+  "title": "Welcome — How This Course Works",
+  "thesis": "You'll know more than you think, sooner than you think.",
+  "prerequisites": [],
+  "content": [
+    { "type": "video", "id": "v1", "title": "TODO: Welcome + tour (install to first green check)", "src": "https://www.youtube.com/watch?v=TODO", "minutes": 5 },
+    { "type": "text", "id": "t1", "text": "[b]Welcome to the course.[/b]\n\nThis tab is your home base. Every lesson has the same shape:\n1. [b]Watch[/b] the video (opens in your browser; comes back marked done).\n2. [b]Answer[/b] the check questions.\n3. [b]Build[/b] in the editor — the live checks below turn green AS you work.\n4. [b]Run test cases[/b] when you code — failures come with hints, not judgment.\n5. [b]Write[/b] your response when asked — a human (your teacher) reads those.\n\nThe progress bar at the top is the whole truth: 100% = lesson done.\n\nOne rule to remember forever: [b]save your file before running tests[/b]. The grader reads what's on disk, not what's on your screen.\n\nEnter your student ID above (your teacher gave it to you — it's yours all year), then answer the two questions below. Watch what happens to the progress bar."
+  ],
+  "assessments": [
+    { "id": "a1", "type": "mc", "title": "Check: finding your way", "required": true,
+      "question": "Where do you see how much of a lesson you've completed?",
+      "choices": ["The progress bar at the top of the Classroom tab", "You ask the teacher", "A website you log into", "You can't — it's a mystery"],
+      "answer": 0, "shuffle": true },
+    { "id": "a2", "type": "mc", "title": "Check: the one rule", "required": true,
+      "question": "Your code looks perfect but the test cases fail. What's the FIRST thing to try?",
+      "choices": ["Save the file, then run the tests again", "Delete everything and start over", "Assume the tests are broken", "Restart the computer"],
+      "answer": 0, "shuffle": true }
+  ],
+  "completion": { "required": ["v1", "a1", "a2"], "rule": "all_required" },
+  "reset": { "restores": [] }
+}

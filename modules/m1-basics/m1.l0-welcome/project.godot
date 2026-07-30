@@ -1,0 +1,11 @@
+; Zinara Curriculum — Lesson 0: Welcome
+config_version=5
+
+[application]
+
+config/name="Zinara 1.0 - Welcome"
+config/features=PackedStringArray("4.2")
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/zinara_classroom/plugin.cfg")
